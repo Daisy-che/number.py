@@ -22,3 +22,22 @@ def get-guess():
                     elif guess<secret_number:
                         return "Too low"
                         else:return"Too high"
+                        #track the number,detect if the game is over
+                        def play-game():
+                            attempts=0
+                            won=false
+                            while attempts <max-attempts:
+                                attempts+-=1
+                                guess=get-gues()
+                                result=check-guess(guess,secret-number)
+
+ if result=="correct":
+ print(f"Congratulation!You guessed the secret number{secret_number}in{attempts3}attempts.")
+                        won=True
+                        break
+                        else
+                        print(f"Sorry,you ran outof attempts!The secret number is {secret_number}in")
+
+                        if_____name____=="_____main______":
+                            print("Welcome to the Number Guessing Game!")
+                            play_game()
